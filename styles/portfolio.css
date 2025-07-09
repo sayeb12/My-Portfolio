@@ -200,6 +200,10 @@ main section{
     text-align: center;
 }
 
+/* resume Styles */
+.resume{
+    margin-bottom: 113px;
+}
 .resume img{
     height: 80px;
     width: 100px;
