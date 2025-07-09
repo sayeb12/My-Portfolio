@@ -113,6 +113,8 @@ nav ul li a{
     background-position: top left, bottom right;
 }
 
+
+
 /* Main Styles */
 main{
     max-width: 1140px;
@@ -130,12 +132,17 @@ main section{
     text-align: center;
     
 }
+#about-title{
+    color: black;
+}
+
 
 .about-items {
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
     margin-bottom: 50px;
+    color: black;
 
 }
 
