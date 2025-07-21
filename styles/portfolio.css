@@ -254,3 +254,15 @@ body{
     background-color: black;
     color: white;
 }
+
+/* Responsive Media Query */
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    .skill-container {
+        flex-direction: column;
+    }
+    
+}
