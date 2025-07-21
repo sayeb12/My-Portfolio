@@ -296,6 +296,13 @@ body{
         width: calc(100% - 40px);
     }
 
-
+    .experience img{
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        object-fit: cover;
+        border-radius: 30%;
+    }
     
 }
