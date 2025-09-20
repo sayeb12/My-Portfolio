@@ -4,189 +4,205 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MD SAYEB - Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/portfolio.css">
 </head>
-<body class="open-sans-normal">
-    <header class="header secondary-bg">
-        <nav>
-            <div class="nav-container">
-                <h3 class="nav-title">
-                    SAY<span class="font-primary">E</span>B
-                </h3>
-                <button class="menu-toggle" id="menuToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-            <ul id="navMenu">
-                <li><a href="#about-me">About</a></li>
-                <li><a href="#skills-now">Projects</a></li>
-                <li><a href="#message"><button class="btn-primary">Hire Me</button></a></li>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar"></div>
+
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">SAY<span>E</span>B</div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-
-        <div class="banner">
-            <div class="banner-content">
-                <h4 class="banner-greetings">Assalamualaikum,<br> I am</h4>
-                <h1 class="banner-title">MD SAYEB</h1>
-                <p>I am a passionate Computer Science student specializing in software development, AI projects, and innovative tech solutions.
-                </p>
-                <div class="banner-buttons">
-                    <a href="files/My_Cv__213902113 for website.pdf" download="">
-                        <button class="btn-primary">Download CV</button>
-                    </a>
-                    <a href="mailto:sayebahmed1234@gmail.com">
-                        <button class="btn-primary">Contact</button>
-                    </a>
-                </div>
-            </div>
-
-            <div class="profile-image-container">
-                <img src="images/profile-removebg-preview.png" alt="My Profile picture" class="profile-image">
-            </div>
         </div>
     </header>
 
-    <main>
-        <section class="about secondary-bg" id="about-me">
-            <div class="inside-bg">
-                <h3 class="section-title" id="about-title">About Me</h3>
-                <p class="section-description">I am a passionate web developer and Computer Science student who loves building creative digital solutions; I'm a fast learner and a dedicated hard worker always eager to grow and take on new challenges.
-                </p>
-
-                <div class="about-items">
-                    <div class="about-item">
-                        <p class="item-title">Name</p>
-                        <p class="item-description">Md SAYEB</p>
-                    </div>
-                    <div class="about-item">
-                        <p class="item-title">Email</p>
-                        <p class="item-description">213902113@student.green.edu.bd</p>
-                    </div>
-                    <div class="about-item">
-                        <p class="item-title">Date of Birth</p>
-                        <p class="item-description">December 12 2002</p>
-                    </div>
-                    <div class="about-item">
-                        <p class="item-title">From</p>
-                        <p class="item-description">Matuail, Dhaka, Bangladesh</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="skills" id="skills-now">
-            <h3 class="section-title text-center">What I Do</h3>
-            <p class="section-description text-center">I am currently learning web development, attending university, and working as an intern at NextTech Limited. Alongside my studies, I'm conducting thesis research on Computer Vision-Based Human Activity Recognition for elderly care and monitoring. I also actively participate in extracurricular activities as a general member of the Green University Language Club and an intern at CLCS.
-            </p>
-            <br>
-            <div class="skill-container">
-                <div class="skill">
-                    <img src="images/icons/js.png" alt="JavaScript Icon">
-                    <h4 class="skill-title">Vanilla JavaScript</h4>
-                    <p class="skill-description">List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
-                </div>
-                <div class="skill">
-                    <img src="images/icons/react.png" alt="React Icon">
-                    <h4 class="skill-title">React</h4>
-                    <p class="skill-description">List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
-                </div>
-                <div class="skill">
-                    <img src="images/icons/nodejs.png" alt="nodejs Icon">
-                    <h4 class="skill-title">Node.js</h4>
-                    <p class="skill-description">List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
-                </div>
-                <div class="skill">
-                    <img src="images/icons/mongo.png" alt="MongoDB Icon">
-                    <h4 class="skill-title">MongoDB</h4>
-                    <p class="skill-description">List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="resume">
-            <h3 class="section-title text-center">A summary of My Resume</h3>
-            <div class="resume-container">
-                <div class="resume-column">
-                    <h3 class="resume-column-title">My Education</h3>
-                    <div class="experience">
-                        <h4 class="experience-title">BSC in Computer Engineering</h4>
-                        <img src="images/gub.png" alt="GUB" height="80" width="100">
-                        <h5 class="experience-sub-title">Green University Of Bangladesh / 2021 - 2025</h5>
-                        <div class="experience-description">I have been pursuing my Bachelor's degree in Computer Science and Engineering at Green University of Bangladesh from 2021 to 2025. During my academic journey, I achieved several milestones, including receiving the Academic Excellence Award in recognition of my outstanding academic performance.</div>
-                    </div>
-                    <hr>
-                    <div class="experience">
-                        <h4 class="experience-title">HSC in Science</h4>
-                        <img src="images/duc.png" alt="duc" height="80" width="100">
-                        <h5 class="experience-sub-title">Donia University College</h5>
-                        <div class="experience-description">I completed my Higher Secondary Certificate (HSC) from Donia University College with a GPA of 5.00 in the Science stream. During my college years, my favorite subjects were Physics, Mathematics, and ICT.</div>
-                    </div>
-                    <hr>
-                    <div class="experience">
-                        <h4 class="experience-title">SSC in Science</h4>
-                        <img src="images/dhs.jpg" alt="dhs" height="80" width="100">
-                        <h5 class="experience-sub-title">Dolairpar High School</h5>
-                        <div class="experience-description">I completed my school education at Dolairpar High School, where I also pursued the Science stream and achieved a GPA of 5.00 in the SSC examination.</div>
-                    </div>
-                </div>
-                <div class="resume-column">
-                    <h3 class="resume-column-title">My Experience</h3>
-                    <div class="experience">
-                        <h4 class="experience-title">Full Stack Developer</h4>
-                        <img src="images/NextTech.jpg" alt="NextTech" height="80" width="100">
-                        <h5 class="experience-sub-title">NextTech Internship</h5>
-                        <div class="experience-description">As an intern at NextTech Limited, I had the opportunity to work in a professional environment where I gained hands-on experience in web development and real-world project collaboration.</div>
-                    </div>
-                    <hr>
-                    <div class="experience">
-                        <h4 class="experience-title">Content Writer</h4>
-                        <img src="images/clcs.jpg" alt="CLCS" height="80" width="100">
-                        <h5 class="experience-sub-title">CLCS Internship</h5>
-                        <div class="experience-description">At CLCS, I helped organize language and co-curricular events and had the opportunity to volunteer at the Japanese NAT Test through their collaboration with Japan.</div>
-                    </div>
-                    <hr>
-                    <div class="experience">
-                        <h4 class="experience-title">General Member</h4>
-                        <img src="images/gucl.png" alt="gucl" height="80" width="100">
-                        <h5 class="experience-sub-title">Green University Language Club</h5>
-                        <div class="experience-description">I served as a general member of the Green University Language Club, where I participated in various language-based and cultural activities.</div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center resume-download-cv">
-                <a href="files/My_Cv__213902113 for website.pdf" download="">
-                    <button class="btn-primary">Download CV</button>
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="secondary-bg" id="message">
-        <div class="footer-column">
-            <h3 class="section-title">Let's Connect</h3>
-            <p class="footer-description">Please fill out the form on this section to contact with me or call between 9:00 A.M and 8.00 P.M ET, Monday through Friday.</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/md.sayeb.739894"><img src="images/icons/facebook2.png" alt="Facebook"></a>
-                <a href="https://www.linkedin.com/in/md-abu-ubaida-jubaer-sayeb-14821b20b/"><img src="images/icons/linkedin.png" alt="LinkedIn"></a>
-                <a href="https://github.com/sayeb12"><img src="images/icons/github.png" alt="Github"></a>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h4 class="hero-greeting">Assalamualaikum, I am</h4>
+            <h1 class="hero-title">MD SAYEB</h1>
+            <p class="hero-description">I am a passionate Computer Science student specializing in software development, AI projects, and innovative tech solutions.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn">Hire Me</a>
+                <a href="files/sayebs_cv.pdf" class="btn btn-accent">Download CV</a>
             </div>
         </div>
-        <div class="footer-column">
-            <h3 class="section-title">Let's Message me</h3>
-            <form action="">
-                <input type="text" name="name" id="name" placeholder="Your Name" required>
-                <input type="email" name="email" id="email" placeholder="Your Email" required>
-                <textarea name="message" id="message" cols="30" rows="5" placeholder="Your Message" required></textarea>
-                <input type="submit" value="Submit" class="btn-primary">
-            </form>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/profile.jpg" alt="MD SAYEB">
+                </div>
+                <div class="about-text">
+                    <p>I am a passionate web developer and Computer Science student who loves building creative digital solutions; I'm a fast learner and a dedicated hard worker always eager to grow and take on new challenges.</p>
+                    <div class="about-items">
+                        <div class="about-item">
+                            <p class="item-title">Name</p>
+                            <p class="item-description">Md SAYEB</p>
+                        </div>
+                        <div class="about-item">
+                            <p class="item-title">Email</p>
+                            <p class="item-description">sayebahmed1234@gmail.com</p>
+                        </div>
+                        <div class="about-item">
+                            <p class="item-title">Date of Birth</p>
+                            <p class="item-description">December 12 2002</p>
+                        </div>
+                        <div class="about-item">
+                            <p class="item-title">From</p>
+                            <p class="item-description">Matuail, Dhaka, Bangladesh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">What I Do</h2>
+            <p class="section-description text-center">I am currently learning web development, attending university, and working as an intern at NextTech Limited. Alongside my studies, I'm conducting thesis research on Computer Vision-Based Human Activity Recognition for elderly care and monitoring.</p>
+            <div class="skills-container">
+                <div class="skill animate-on-scroll">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3 class="skill-title">Vanilla JavaScript</h3>
+                    <p class="skill-description">Building interactive and dynamic web applications with modern JavaScript ES6+ features and best practices.</p>
+                </div>
+                <div class="skill animate-on-scroll">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="skill-title">React</h3>
+                    <p class="skill-description">Developing responsive and scalable single-page applications with React, Redux, and React Router.</p>
+                </div>
+                <div class="skill animate-on-scroll">
+                    <div class="skill-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3 class="skill-title">Node.js</h3>
+                    <p class="skill-description">Creating server-side applications and RESTful APIs using Node.js, Express, and various databases.</p>
+                </div>
+                <div class="skill animate-on-scroll">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="skill-title">MongoDB</h3>
+                    <p class="skill-description">Designing and implementing database solutions with MongoDB, Mongoose, and database optimization techniques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume" id="resume">
+        <div class="container">
+            <h2 class="section-title">My Resume</h2>
+            <div class="resume-container">
+                <div class="resume-column">
+                    <h3 class="resume-title">Education</h3>
+                    <div class="experience animate-on-scroll">
+                        <h4 class="experience-title">BSC in Computer Engineering</h4>
+                        <h5 class="experience-subtitle">Green University Of Bangladesh / 2021 - 2025</h5>
+                        <p class="experience-description">I have been pursuing my Bachelor's degree in Computer Science and Engineering at Green University of Bangladesh from 2021 to 2025. During my academic journey, I achieved several milestones, including receiving the Academic Excellence Award.</p>
+                    </div>
+                    <div class="experience animate-on-scroll">
+                        <h4 class="experience-title">HSC in Science</h4>
+                        <h5 class="experience-subtitle">Donia University College</h5>
+                        <p class="experience-description">I completed my Higher Secondary Certificate (HSC) from Donia University College with a GPA of 5.00 in the Science stream. During my college years, my favorite subjects were Physics, Mathematics, and ICT.</p>
+                    </div>
+                    <div class="experience animate-on-scroll">
+                        <h4 class="experience-title">SSC in Science</h4>
+                        <h5 class="experience-subtitle">Dolairpar High School</h5>
+                        <p class="experience-description">I completed my school education at Dolairpar High School, where I also pursued the Science stream and achieved a GPA of 5.00 in the SSC examination.</p>
+                    </div>
+                </div>
+                <div class="resume-column">
+                    <h3 class="resume-title">Experience</h3>
+                    <div class="experience animate-on-scroll">
+                        <h4 class="experience-title">Full Stack Developer</h4>
+                        <h5 class="experience-subtitle">NextTech Internship</h5>
+                        <p class="experience-description">As an intern at NextTech Limited, I had the opportunity to work in a professional environment where I gained hands-on experience in web development and real-world project collaboration.</p>
+                    </div>
+                    <div class="experience animate-on-scroll">
+                        <h4 class="experience-title">Content Writer</h4>
+                        <h5 class="experience-subtitle">CLCS Internship</h5>
+                        <p class="experience-description">At CLCS, I helped organize language and co-curricular events and had the opportunity to volunteer at the Japanese NAT Test through their collaboration with Japan.</p>
+                    </div>
+                    <div class="experience animate-on-scroll">
+                        <h4 class="experience-title">General Member</h4>
+                        <h5 class="experience-subtitle">Green University Language Club</h5>
+                        <p class="experience-description">I served as a general member of the Green University Language Club, where I participated in various language-based and cultural activities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <h3>Let's Connect</h3>
+                <p>Please fill out the form on this section to contact with me or call between 9:00 A.M and 8.00 P.M ET, Monday through Friday.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Let's Message me</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 MD SAYEB. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <script src="scripts/portfolio.js"></script>
+<script src="scripts/portfolio.js"></script>
 </body>
 </html>
