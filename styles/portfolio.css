@@ -610,3 +610,7 @@
         body.dark-mode .experience-title {
             color: var(--light);
         }
+
+        .experience-description{
+    color: var(--text-light);
+        }
