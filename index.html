@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>MD SAYEB - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -12,71 +12,79 @@
 <body class="open-sans-normal">
     <header class="header secondary-bg">
         <nav>
-            <h3 class="nav-title">
-                SAY<span class="font-primary">E</span>B
-            </h3>
-            <ul>
-                <li><a style="color: white;" href="#about-me">About</a></li>
-                <li><a style="color: white;" href="#skills-now">Projects</a></li>
+            <div class="nav-container">
+                <h3 class="nav-title">
+                    SAY<span class="font-primary">E</span>B
+                </h3>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <ul id="navMenu">
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#skills-now">Projects</a></li>
                 <li><a href="#message"><button class="btn-primary">Hire Me</button></a></li>
+            </ul>
         </nav>
 
         <div class="banner">
             <div class="banner-content">
-                <h4 class="banner-greetings" style="color: white;">Assalamualaikum, I am</h4>
+                <h4 class="banner-greetings">Assalamualaikum,<br> I am</h4>
                 <h1 class="banner-title">MD SAYEB</h1>
-                <p style="color: white;">I am a passionate Computer Science student specializing in software development, AI projects, and innovative tech solutions.
+                <p>I am a passionate Computer Science student specializing in software development, AI projects, and innovative tech solutions.
                 </p>
-                <a href="files/My_Cv__213902113 for website.pdf" download="">
-                    <button class="btn-primary">Download CV</button>
-                </a>
-            <a href="mailto:sayebahmed1234@gmail.com">
-                <button class="btn-primary">Contact</button>
-            </a>
-
+                <div class="banner-buttons">
+                    <a href="files/My_Cv__213902113 for website.pdf" download="">
+                        <button class="btn-primary">Download CV</button>
+                    </a>
+                    <a href="mailto:sayebahmed1234@gmail.com">
+                        <button class="btn-primary">Contact</button>
+                    </a>
+                </div>
             </div>
 
-            <img src="images/profile-removebg-preview.png" alt="My Profile picture" class="profile-image">
-
+            <div class="profile-image-container">
+                <img src="images/profile-removebg-preview.png" alt="My Profile picture" class="profile-image">
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="about secondary-bg " id="about-me">
+        <section class="about secondary-bg" id="about-me">
             <div class="inside-bg">
-            <h3 class="section-title" id="about-title">About Me</h3>
-            <p class="section-description">I am a passionate web developer and Computer Science student who loves building creative digital solutions; I’m a fast learner and a dedicated hard worker always eager to grow and take on new challenges.
-            </p>
+                <h3 class="section-title" id="about-title">About Me</h3>
+                <p class="section-description">I am a passionate web developer and Computer Science student who loves building creative digital solutions; I'm a fast learner and a dedicated hard worker always eager to grow and take on new challenges.
+                </p>
 
-            <div class="about-items ">
-                <!-- .about-item*4>p.item-title+p.item-description -->
-                 <div class="about-item">
-                    <p class="item-title">Name</p>
-                    <p class="item-description">Md SAYEB</p>
-                 </div>
-                 <div class="about-item">
-                    <p class="item-title">Email</p>
-                    <p class="item-description">213902113@student.green.edu.bd</p>
-                 </div>
-                 <div class="about-item">
-                    <p class="item-title">Date of Birth</p>
-                    <p class="item-description">December 12 2002</p>
-                 </div>
-                 <div class="about-item">
-                    <p class="item-title">From</p>
-                    <p class="item-description">Matuail,Dhaka,Bangladesh</p>
-                 </div>
-            </div>
+                <div class="about-items">
+                    <div class="about-item">
+                        <p class="item-title">Name</p>
+                        <p class="item-description">Md SAYEB</p>
+                    </div>
+                    <div class="about-item">
+                        <p class="item-title">Email</p>
+                        <p class="item-description">213902113@student.green.edu.bd</p>
+                    </div>
+                    <div class="about-item">
+                        <p class="item-title">Date of Birth</p>
+                        <p class="item-description">December 12 2002</p>
+                    </div>
+                    <div class="about-item">
+                        <p class="item-title">From</p>
+                        <p class="item-description">Matuail, Dhaka, Bangladesh</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="skills" id="skills-now">
             <h3 class="section-title text-center">What I Do</h3>
-            <p class="section-description text-center">I am currently learning web development, attending university, and working as an intern at NextTech Limited. Alongside my studies, I’m conducting thesis research on Computer Vision-Based Human Activity Recognition for elderly care and monitoring. I also actively participate in extracurricular activities as a general member of the Green University Language Club and an intern at CLCS.
+            <p class="section-description text-center">I am currently learning web development, attending university, and working as an intern at NextTech Limited. Alongside my studies, I'm conducting thesis research on Computer Vision-Based Human Activity Recognition for elderly care and monitoring. I also actively participate in extracurricular activities as a general member of the Green University Language Club and an intern at CLCS.
             </p>
             <br>
             <div class="skill-container">
-                <!-- .skill*4>img+h4.skill-title+p.skill-description -->
                 <div class="skill">
                     <img src="images/icons/js.png" alt="JavaScript Icon">
                     <h4 class="skill-title">Vanilla JavaScript</h4>
@@ -103,87 +111,82 @@
         <section class="resume">
             <h3 class="section-title text-center">A summary of My Resume</h3>
             <div class="resume-container">
-                <!-- .resume-column*2>h3.resume-column-title+.experience*3>h4.experience-title+h5.experience-sub-title+.experience-description -->
-                 <div class="resume-column">
+                <div class="resume-column">
                     <h3 class="resume-column-title">My Education</h3>
                     <div class="experience">
                         <h4 class="experience-title">BSC in Computer Engineering</h4>
-                        <img src="images/gub.png" alt="GUB" height="80px" width="100px">
+                        <img src="images/gub.png" alt="GUB" height="80" width="100">
                         <h5 class="experience-sub-title">Green University Of Bangladesh / 2021 - 2025</h5>
-                        <div class="experience-description">I have been pursuing my Bachelor's degree in Computer Science and Engineering at Green University of Bangladesh from 2021 to 2025. During my academic journey, I achieved several milestones, including receiving the Academic Excellence Award in recognition of my outstanding academic performance. I also engaged in extracurricular activities as a general member of the Green University Language Club (GUCL) and served as an intern at the Center for Learning and Community Services (CLCS). I successfully completed my undergraduate thesis on Machine Learning, under the guidance of our honorable Chairperson, Dr. Mohammad Aminur Rahman.
-                    </div>
+                        <div class="experience-description">I have been pursuing my Bachelor's degree in Computer Science and Engineering at Green University of Bangladesh from 2021 to 2025. During my academic journey, I achieved several milestones, including receiving the Academic Excellence Award in recognition of my outstanding academic performance.</div>
                     </div>
                     <hr>
                     <div class="experience">
                         <h4 class="experience-title">HSC in Science</h4>
-                        <img src="images/duc.png" alt="duc" height="80px" width="100px">
+                        <img src="images/duc.png" alt="duc" height="80" width="100">
                         <h5 class="experience-sub-title">Donia University College</h5>
-                        <div class="experience-description">I completed my Higher Secondary Certificate (HSC) from Donia University College with a GPA of 5.00 in the Science stream. During my college years, my favorite subjects were Physics, Mathematics, and ICT, which sparked my passion for technology and problem-solving.
-                    </div>
+                        <div class="experience-description">I completed my Higher Secondary Certificate (HSC) from Donia University College with a GPA of 5.00 in the Science stream. During my college years, my favorite subjects were Physics, Mathematics, and ICT.</div>
                     </div>
                     <hr>
                     <div class="experience">
                         <h4 class="experience-title">SSC in Science</h4>
-                        <img src="images/dhs.jpg" alt="dhs" height="80px" width="100px">
+                        <img src="images/dhs.jpg" alt="dhs" height="80" width="100">
                         <h5 class="experience-sub-title">Dolairpar High School</h5>
-                        <div class="experience-description">I completed my school education at Dolairpar High School, where I also pursued the Science stream and achieved a GPA of 5.00 in the SSC examination. Those school days were truly memorable and played a significant role in shaping my early academic journey.
+                        <div class="experience-description">I completed my school education at Dolairpar High School, where I also pursued the Science stream and achieved a GPA of 5.00 in the SSC examination.</div>
                     </div>
-                    </div>
-                 </div>
-                 <div class="resume-column">
+                </div>
+                <div class="resume-column">
                     <h3 class="resume-column-title">My Experience</h3>
                     <div class="experience">
                         <h4 class="experience-title">Full Stack Developer</h4>
-                        <img src="images/NextTech.jpg" alt="NextTech">
+                        <img src="images/NextTech.jpg" alt="NextTech" height="80" width="100">
                         <h5 class="experience-sub-title">NextTech Internship</h5>
-                        <div class="experience-description">As an intern at NextTech Limited, I had the opportunity to work in a professional environment where I gained hands-on experience in web development and real-world project collaboration. This internship helped me enhance my technical skills, improve my problem-solving abilities, and understand how teamwork and communication play a vital role in the tech industry. It has been a valuable step in my journey toward becoming a skilled developer.
-
-</div>
-<hr>
+                        <div class="experience-description">As an intern at NextTech Limited, I had the opportunity to work in a professional environment where I gained hands-on experience in web development and real-world project collaboration.</div>
                     </div>
+                    <hr>
                     <div class="experience">
                         <h4 class="experience-title">Content Writer</h4>
-                        <img src="images/clcs.jpg" alt="CLCS">
+                        <img src="images/clcs.jpg" alt="CLCS" height="80" width="100">
                         <h5 class="experience-sub-title">CLCS Internship</h5>
-                        <div class="experience-description">At CLCS, I helped organize language and co-curricular events and had the opportunity to volunteer at the Japanese NAT Test through their collaboration with Japan.It was an great experience joining there seminers and workshops.
-
-</div>
-<hr>
+                        <div class="experience-description">At CLCS, I helped organize language and co-curricular events and had the opportunity to volunteer at the Japanese NAT Test through their collaboration with Japan.</div>
                     </div>
+                    <hr>
                     <div class="experience">
                         <h4 class="experience-title">General Member</h4>
-                        <img src="images/gucl.png" alt="gucl">
+                        <img src="images/gucl.png" alt="gucl" height="80" width="100">
                         <h5 class="experience-sub-title">Green University Language Club</h5>
-                        <div class="experience-description">I served as a general member of the Green University Language Club, where I participated in various language-based and cultural activities that helped enhance my communication and teamwork skills.
-</div>
+                        <div class="experience-description">I served as a general member of the Green University Language Club, where I participated in various language-based and cultural activities.</div>
                     </div>
-                 </div>
+                </div>
             </div>
             <div class="text-center resume-download-cv">
-                                <a href="files/My_Cv__213902113 for website.pdf" download="">
+                <a href="files/My_Cv__213902113 for website.pdf" download="">
                     <button class="btn-primary">Download CV</button>
                 </a>
             </div>
         </section>
     </main>
 
-    <footer class="secondary-bg " id="message">
+    <footer class="secondary-bg" id="message">
         <div class="footer-column">
-            <h3 class="section-title" style="text-align: left;">Let's Connect</h3>
-            <p>Please fill out the form on this section to contact with me or call between 9:00 A.M and 8.00 P.M ET, Monday through Friday.</p>
-            <a href="https://www.facebook.com/md.sayeb.739894"><img src="images/icons/facebook2.png" alt="Facebook"></a>
-            <a href="https://www.linkedin.com/in/md-abu-ubaida-jubaer-sayeb-14821b20b/"><img src="images/icons/linkedin.png" alt="LinkedIn"></a>
-            <a href="https://github.com/sayeb12"><img src="images/icons/github.png" alt="Github"></a>
+            <h3 class="section-title">Let's Connect</h3>
+            <p class="footer-description">Please fill out the form on this section to contact with me or call between 9:00 A.M and 8.00 P.M ET, Monday through Friday.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/md.sayeb.739894"><img src="images/icons/facebook2.png" alt="Facebook"></a>
+                <a href="https://www.linkedin.com/in/md-abu-ubaida-jubaer-sayeb-14821b20b/"><img src="images/icons/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://github.com/sayeb12"><img src="images/icons/github.png" alt="Github"></a>
+            </div>
         </div>
         <div class="footer-column">
-            <h3 class="section-title" style="text-align: left;">Let’s Message me</h3>
+            <h3 class="section-title">Let's Message me</h3>
             <form action="">
-                <input type="text" name="" id="" placeholder="Your Name">
-                <input type="email" name="" id="" placeholder="Your Email">
-                <textarea name="" id="" cols="30" rows="30" placeholder="Your Message"></textarea>
-                <input type="button" value="Submit" class="btn-primary">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Submit" class="btn-primary">
             </form>
         </div>
     </footer>
+
+    <script src="scripts/portfolio.js"></script>
 </body>
 </html>
