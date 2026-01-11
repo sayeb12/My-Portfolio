@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +7,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Open+Sans:wght@300;400;600&family=Fira+Sans:wght@300;400;500;700&family=Heebo:wght@900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Open+Sans:wght@300;400;600&family=Fira+Sans:wght@300;400;500;700&family=Heebo:wght@900&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
     <link rel="stylesheet" href="styles/portfolio.css">
 </head>
-
 <body>
     <!-- Progress Bar -->
     <div class="progress-bar"></div>
@@ -61,8 +57,7 @@
         <div class="container hero-content">
             <h4 class="hero-greeting">Assalamualaikum, I am</h4>
             <h1 class="hero-title" data-splitting>MD SAYEB</h1>
-            <p class="hero-description">I am a passionate Computer Science student specializing in software development,
-                AI projects, and innovative tech solutions.</p>
+            <p class="hero-description">I am a passionate Computer Science student specializing in software development, AI projects, and innovative tech solutions.</p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn">Hire Me</a>
                 <div class="fancy-button-wrapper">
@@ -112,9 +107,7 @@
                     <img src="images/profile.jpg" alt="MD SAYEB">
                 </div>
                 <div class="about-text">
-                    <p>I am a passionate web developer and Computer Science student who loves building creative digital
-                        solutions; I'm a fast learner and a dedicated hard worker always eager to grow and take on new
-                        challenges.</p>
+                    <p>I am a passionate web developer and Computer Science student who loves building creative digital solutions; I'm a fast learner and a dedicated hard worker always eager to grow and take on new challenges.</p>
                     <div class="about-items">
                         <div class="about-item">
                             <p class="item-title">Name</p>
@@ -142,41 +135,135 @@
     <section class="skills" id="skills">
         <div class="container">
             <h2 class="section-title">What I Do</h2>
-            <p class="section-description">I am currently learning web development, attending university, and working as
-                an intern at NextTech Limited. Alongside my studies, I'm conducting thesis research on Computer
-                Vision-Based Human Activity Recognition for elderly care and monitoring.</p>
+            <p class="section-description">I am currently learning web development, attending university, and working as an intern at NextTech Limited. Alongside my studies, I'm conducting thesis research on Computer Vision-Based Human Activity Recognition for elderly care and monitoring.</p>
             <div class="skills-container">
-                <div class="skill animate-on-scroll">
+                <div class="skill animate-on-scroll" data-skill="python">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3 class="skill-title">Python</h3>
+                    <p class="skill-description">Data analysis, automation, and machine learning applications.</p>
+                </div>
+                <div class="skill animate-on-scroll" data-skill="java">
+                    <div class="skill-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3 class="skill-title">Java</h3>
+                    <p class="skill-description">Object-oriented programming and enterprise applications.</p>
+                </div>
+                <div class="skill animate-on-scroll" data-skill="php">
+                    <div class="skill-icon">
+                        <i class="fab fa-php"></i>
+                    </div>
+                    <h3 class="skill-title">PHP</h3>
+                    <p class="skill-description">Server-side scripting and dynamic web development.</p>
+                </div>
+                <div class="skill animate-on-scroll" data-skill="laravel">
+                    <div class="skill-icon">
+                        <i class="fab fa-laravel"></i>
+                    </div>
+                    <h3 class="skill-title">Laravel</h3>
+                    <p class="skill-description">Building robust web applications with elegant syntax.</p>
+                </div>
+                <div class="skill animate-on-scroll" data-skill="javascript">
                     <div class="skill-icon">
                         <i class="fab fa-js"></i>
                     </div>
-                    <h3 class="skill-title">Vanilla JavaScript</h3>
-                    <p class="skill-description">Building interactive and dynamic web applications with modern
-                        JavaScript ES6+ features and best practices.</p>
+                    <h3 class="skill-title">JavaScript</h3>
+                    <p class="skill-description">Modern ES6+ features and interactive web experiences.</p>
                 </div>
-                <div class="skill animate-on-scroll">
+                <div class="skill animate-on-scroll" data-skill="sql">
                     <div class="skill-icon">
-                        <i class="fab fa-react"></i>
+                        <i class="fas fa-database"></i>
                     </div>
-                    <h3 class="skill-title">React</h3>
-                    <p class="skill-description">Developing responsive and scalable single-page applications with React,
-                        Redux, and React Router.</p>
+                    <h3 class="skill-title">SQL</h3>
+                    <p class="skill-description">Database design, queries, and optimization.</p>
                 </div>
-                <div class="skill animate-on-scroll">
+                <div class="skill animate-on-scroll" data-skill="nextjs">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 128 128" width="50" height="50">
+                            <path fill="currentColor" d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64c11.2 0 21.7-2.9 30.8-7.9L48.4 55.3v36.6h-6.8V41.8h6.8l50.5 75.8C116.4 106.2 128 86.5 128 64c0-35.3-28.7-64-64-64zm22.1 84.6l-7.5-11.3V41.8h7.5v42.8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Next.js</h3>
+                    <p class="skill-description">React framework for production-grade applications.</p>
+                </div>
+                <div class="skill animate-on-scroll" data-skill="nodejs">
                     <div class="skill-icon">
                         <i class="fab fa-node-js"></i>
                     </div>
                     <h3 class="skill-title">Node.js</h3>
-                    <p class="skill-description">Creating server-side applications and RESTful APIs using Node.js,
-                        Express, and various databases.</p>
+                    <p class="skill-description">Server-side JavaScript runtime and REST APIs.</p>
                 </div>
-                <div class="skill animate-on-scroll">
+                <div class="skill animate-on-scroll" data-skill="react">
                     <div class="skill-icon">
-                        <i class="fas fa-database"></i>
+                        <i class="fab fa-react"></i>
                     </div>
-                    <h3 class="skill-title">MongoDB</h3>
-                    <p class="skill-description">Designing and implementing database solutions with MongoDB, Mongoose,
-                        and database optimization techniques.</p>
+                    <h3 class="skill-title">React.js</h3>
+                    <p class="skill-description">Component-based UI development and state management.</p>
+                </div>
+                <div class="skill animate-on-scroll" data-skill="html">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3 class="skill-title">HTML5</h3>
+                    <p class="skill-description">Semantic markup and modern web standards.</p>
+                </div>
+                <div class="skill animate-on-scroll" data-skill="css">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3 class="skill-title">CSS3</h3>
+                    <p class="skill-description">Responsive design, animations, and modern layouts.</p>
+                </div>
+                <div class="skill animate-on-scroll" data-skill="ml">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="skill-title">Machine Learning</h3>
+                    <p class="skill-description">Computer Vision and AI model development.</p>
+                </div>
+                <div class="skill animate-on-scroll" data-skill="oop">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="skill-title">OOP</h3>
+                    <p class="skill-description">Object-oriented programming principles and patterns.</p>
+                </div>
+                <div class="skill animate-on-scroll" data-skill="latex">
+                    <div class="skill-icon">
+                        <i class="fas fa-file-code"></i>
+                    </div>
+                    <h3 class="skill-title">LaTeX</h3>
+                    <p class="skill-description">Academic writing and document preparation.</p>
+                </div>
+                <div class="skill animate-on-scroll" data-skill="database">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="skill-title">Database Management</h3>
+                    <p class="skill-description">SQL and NoSQL database administration.</p>
+                </div>
+                <div class="skill animate-on-scroll" data-skill="api">
+                    <div class="skill-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3 class="skill-title">REST APIs</h3>
+                    <p class="skill-description">RESTful service design and integration.</p>
+                </div>
+                <div class="skill animate-on-scroll" data-skill="vicidial">
+                    <div class="skill-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="skill-title">Vicidial</h3>
+                    <p class="skill-description">Call center software and telephony systems.</p>
+                </div>
+                <div class="skill animate-on-scroll" data-skill="asterisk">
+                    <div class="skill-icon">
+                        <i class="fas fa-phone-volume"></i>
+                    </div>
+                    <h3 class="skill-title">Asterisk</h3>
+                    <p class="skill-description">VoIP and PBX telephony framework.</p>
                 </div>
             </div>
         </div>
@@ -192,24 +279,17 @@
                     <div class="experience animate-on-scroll">
                         <h4 class="experience-title">BSC in Computer Engineering</h4>
                         <h5 class="experience-subtitle">Green University Of Bangladesh / 2021 - 2025</h5>
-                        <p class="experience-description">I have been pursuing my Bachelor's degree in Computer Science
-                            and Engineering at Green University of Bangladesh from 2021 to 2025. During my academic
-                            journey, I achieved several milestones, including receiving the Academic Excellence Award.
-                        </p>
+                        <p class="experience-description">I have been pursuing my Bachelor's degree in Computer Science and Engineering at Green University of Bangladesh from 2021 to 2025. During my academic journey, I achieved several milestones, including receiving the Academic Excellence Award.</p>
                     </div>
                     <div class="experience animate-on-scroll">
                         <h4 class="experience-title">HSC in Science</h4>
                         <h5 class="experience-subtitle">Donia University College</h5>
-                        <p class="experience-description">I completed my Higher Secondary Certificate (HSC) from Donia
-                            University College with a GPA of 5.00 in the Science stream. During my college years, my
-                            favorite subjects were Physics, Mathematics, and ICT.</p>
+                        <p class="experience-description">I completed my Higher Secondary Certificate (HSC) from Donia University College with a GPA of 5.00 in the Science stream. During my college years, my favorite subjects were Physics, Mathematics, and ICT.</p>
                     </div>
                     <div class="experience animate-on-scroll">
                         <h4 class="experience-title">SSC in Science</h4>
                         <h5 class="experience-subtitle">Dolairpar High School</h5>
-                        <p class="experience-description">I completed my school education at Dolairpar High School,
-                            where I also pursued the Science stream and achieved a GPA of 5.00 in the SSC examination.
-                        </p>
+                        <p class="experience-description">I completed my school education at Dolairpar High School, where I also pursued the Science stream and achieved a GPA of 5.00 in the SSC examination.</p>
                     </div>
                 </div>
                 <div class="resume-column">
@@ -217,22 +297,17 @@
                     <div class="experience animate-on-scroll">
                         <h4 class="experience-title">Full Stack Developer</h4>
                         <h5 class="experience-subtitle">NextTech Internship</h5>
-                        <p class="experience-description">As an intern at NextTech Limited, I had the opportunity to
-                            work in a professional environment where I gained hands-on experience in web development and
-                            real-world project collaboration.</p>
+                        <p class="experience-description">As an intern at NextTech Limited, I had the opportunity to work in a professional environment where I gained hands-on experience in web development and real-world project collaboration.</p>
                     </div>
                     <div class="experience animate-on-scroll">
                         <h4 class="experience-title">Content Writer</h4>
                         <h5 class="experience-subtitle">CLCS Internship</h5>
-                        <p class="experience-description">At CLCS, I helped organize language and co-curricular events
-                            and had the opportunity to volunteer at the Japanese NAT Test through their collaboration
-                            with Japan.</p>
+                        <p class="experience-description">At CLCS, I helped organize language and co-curricular events and had the opportunity to volunteer at the Japanese NAT Test through their collaboration with Japan.</p>
                     </div>
                     <div class="experience animate-on-scroll">
                         <h4 class="experience-title">General Member</h4>
                         <h5 class="experience-subtitle">Green University Language Club</h5>
-                        <p class="experience-description">I served as a general member of the Green University Language
-                            Club, where I participated in various language-based and cultural activities.</p>
+                        <p class="experience-description">I served as a general member of the Green University Language Club, where I participated in various language-based and cultural activities.</p>
                     </div>
                 </div>
             </div>
@@ -244,13 +319,10 @@
         <div class="container contact-container">
             <div class="contact-info">
                 <h3>Let's Connect</h3>
-                <p>Please fill out the form on this section to contact with me or call between 9:00 A.M and 8.00 P.M ET,
-                    Monday through Friday.</p>
+                <p>Please fill out the form on this section to contact with me or call between 9:00 A.M and 8.00 P.M ET, Monday through Friday.</p>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/md.sayeb.739894" class="social-icon"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.linkedin.com/in/sayeb12/" class="social-icon"><i
-                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/md.sayeb.739894" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/sayeb12/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://github.com/sayeb12" class="social-icon"><i class="fab fa-github"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                 </div>
@@ -276,11 +348,10 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; MD SAYEB. All Rights Reserved.</p>
+            <p>&copy; 2023 MD SAYEB. All Rights Reserved.</p>
         </div>
     </footer>
 
-   <script src="scripts/portfolio.js"></script>
+<script src="scripts/portfolio.js"></script>
 </body>
-
 </html>

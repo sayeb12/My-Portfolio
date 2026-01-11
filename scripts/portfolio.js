@@ -4,7 +4,7 @@
 
         // Three.js 3D Background Animation
         var renderer, scene, camera, circle, skelet, particle;
-
+        
         function initThreeJS() {
             renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
             renderer.setPixelRatio((window.devicePixelRatio) ? window.devicePixelRatio : 1);
@@ -12,28 +12,28 @@
             renderer.autoClear = false;
             renderer.setClearColor(0x000000, 0.0);
             document.getElementById('canvas').appendChild(renderer.domElement);
-
+            
             scene = new THREE.Scene();
             camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
             camera.position.z = 400;
             scene.add(camera);
-
+            
             circle = new THREE.Object3D();
             skelet = new THREE.Object3D();
             particle = new THREE.Object3D();
             scene.add(circle);
             scene.add(skelet);
             scene.add(particle);
-
+            
             var geometry = new THREE.TetrahedronGeometry(2, 0);
             var geom = new THREE.IcosahedronGeometry(7, 1);
             var geom2 = new THREE.IcosahedronGeometry(15, 1);
-
+            
             var material = new THREE.MeshPhongMaterial({
                 color: 0xffffff,
                 flatShading: true
             });
-
+            
             for (var i = 0; i < 1000; i++) {
                 var mesh = new THREE.Mesh(geometry, material);
                 mesh.position.set(Math.random() - 0.5, Math.random() - 0.5, Math.random() - 0.5).normalize();
@@ -41,29 +41,29 @@
                 mesh.rotation.set(Math.random() * 2, Math.random() * 2, Math.random() * 2);
                 particle.add(mesh);
             }
-
+            
             var mat = new THREE.MeshPhongMaterial({
                 color: 0xffffff,
                 flatShading: true
             });
-
+            
             var mat2 = new THREE.MeshPhongMaterial({
                 color: 0xffffff,
                 wireframe: true,
                 side: THREE.DoubleSide
             });
-
+            
             var planet = new THREE.Mesh(geom, mat);
             planet.scale.x = planet.scale.y = planet.scale.z = 16;
             circle.add(planet);
-
+            
             var planet2 = new THREE.Mesh(geom2, mat2);
             planet2.scale.x = planet2.scale.y = planet2.scale.z = 10;
             skelet.add(planet2);
-
+            
             var ambientLight = new THREE.AmbientLight(0x999999);
             scene.add(ambientLight);
-
+            
             var lights = [];
             lights[0] = new THREE.DirectionalLight(0xffffff, 1);
             lights[0].position.set(1, 0, 0);
@@ -74,16 +74,16 @@
             scene.add(lights[0]);
             scene.add(lights[1]);
             scene.add(lights[2]);
-
+            
             window.addEventListener('resize', onThreeResize, false);
         }
-
+        
         function onThreeResize() {
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
             renderer.setSize(window.innerWidth, window.innerHeight);
         }
-
+        
         function animateThree() {
             requestAnimationFrame(animateThree);
             particle.rotation.x += 0.0000;
@@ -95,7 +95,7 @@
             renderer.clear();
             renderer.render(scene, camera);
         }
-
+        
         // Initialize Three.js
         initThreeJS();
         animateThree();
@@ -110,11 +110,11 @@
         navLinks.forEach((link, index) => {
             link.addEventListener("click", (e) => {
                 const aTag = link.lastElementChild;
-
+                
                 // Remove active class from all links
                 allATags.forEach((a) => a.classList.remove("active"));
                 allIconTags.forEach((i) => (i.style.transform = "scale(1)"));
-
+                
                 // Add active class to clicked link
                 aTag.classList.add("active");
 
@@ -122,7 +122,7 @@
                 const theIndex = link.dataset.val;
                 const spotlightPosition = 15 + theIndex * 73;
                 light.style.left = `${spotlightPosition}px`;
-
+                
                 // Scale icon
                 const icon = link.childNodes[1].childNodes[0];
                 icon.style.transform = "scale(1.2)";
@@ -137,17 +137,17 @@
             sections.forEach((section, index) => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.offsetHeight;
-
+                
                 if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
                     allATags.forEach((a) => a.classList.remove("active"));
                     allIconTags.forEach((i) => (i.style.transform = "scale(1)"));
-
+                    
                     if (navLinks[index]) {
                         const activeLink = navLinks[index].querySelector('a');
                         const activeIcon = navLinks[index].querySelector('i');
                         activeLink.classList.add("active");
                         activeIcon.style.transform = "scale(1.2)";
-
+                        
                         const spotlightPosition = 15 + index * 73;
                         light.style.left = `${spotlightPosition}px`;
                     }
@@ -209,7 +209,7 @@
         darkModeToggle.addEventListener('click', () => {
             body.classList.toggle('dark-mode');
             const icon = darkModeToggle.querySelector('i');
-
+            
             if (body.classList.contains('dark-mode')) {
                 icon.classList.remove('fa-moon');
                 icon.classList.add('fa-sun');
@@ -237,7 +237,7 @@
 
         // CV Download Button Functionality
         const cvButton = document.getElementById('button');
-        cvButton.addEventListener('change', function () {
+        cvButton.addEventListener('change', function() {
             if (this.checked) {
                 // Wait for the full animation to complete (5 seconds)
                 setTimeout(() => {
@@ -248,7 +248,7 @@
                     document.body.appendChild(link);
                     link.click();
                     document.body.removeChild(link);
-
+                    
                     // Reset button after download
                     setTimeout(() => {
                         this.checked = false;
